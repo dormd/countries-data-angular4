@@ -1,0 +1,108 @@
+<html>
+  <head>
+    <script>
+        // See http://www.backalleycoder.com/2016/05/13/sghpa-the-single-page-app-hack-for-github-pages/
+        (function(){
+            var redirect = sessionStorage.redirect;
+            delete sessionStorage.redirect;
+            
+            if (redirect && redirect != location.href) {
+                history.replaceState(null, null, redirect);
+            }
+        })();
+    </script>
+
+    <meta charset="utf-8">
+    <title>CountriesDataAngular4 | By dormd</title>
+    <base href="">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <link rel='stylesheet' href='assets/font-awesome/styles/font-awesome.css'>
+    <link rel="stylesheet" href="assets/bootstrap/styles/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  </head>
+
+  <body>
+
+    <div class="jumbotron text-center">
+      <div class="container">
+        <h1>Countries data Angular v4</h1>
+        <p>An Angular v4 application uses countries-data npm</p>
+        <a class="btn btn-outline btn-lg" href="https://github.com/dormd/countries-data-angular4"><span class="fa fa-github"></span> View on GitHub</a>
+        <a class="btn btn-outline btn-main btn-lg" href="https://dormd.github.io/ng2-countries"><span class="fa fa-globe"></span> View a related project</a>
+        <a class="btn btn-outline btn-lg" href="https://github.com/dormd/countries-data/archive/master.zip"><span class="fa fa-download"></span> Download</a>
+      </div>
+      <div class="bottom">
+          <iframe src="https://ghbtns.com/github-btn.html?user=dormd&amp;repo=countries-data&amp;type=watch&amp;count=true&amp;size=large" class="social-share"></iframe>
+  
+          <iframe 
+              id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" 
+              class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" title="Twitter Tweet Button"      
+              src="https://platform.twitter.com/widgets/tweet_button.39f7ee9fffbd122b7a37a520dbdaebc6.en.html#dnt=false&amp;hashtags=angular%20%23angular4%20%23javascript&amp;id=twitter-widget-0&amp;lang=en&amp;original_referer=http%3A%2F%2Fflag-icon-css.lip.is%2F&amp;size=l&amp;text=Json%20data%20about%20countries%2C%20languages%20and%20anthems&amp;time=1477752803742&amp;type=share&amp;url=http%3A%2F%2Fdormd.github.io/countries-data%2F&amp;via=dormoshe" 
+              style="position: static; visibility: visible; width: 75px; height: 28px;" 
+              data-url="http://dormd.github.io/countries-data/">
+          </iframe>
+      </div>        
+    </div>
+
+    <app-root>Loading...</app-root>
+
+    <a href="https://github.com/dormd/countries-data-angular4" title="Fork me on GitHub" class="github-corner">
+        <svg width="80" height="80" viewBox="0 0 250 250"><title>Fork me on GitHub</title><path d="M0 0h250v250"></path><path d="M127.4 110c-14.6-9.2-9.4-19.5-9.4-19.5 3-7 1.5-11 1.5-11-1-6.2 3-2 3-2 4 4.7 2 11 2 11-2.2 10.4 5 14.8 9 16.2" fill="currentColor" style="transform-origin:130px 110px"    class="octo-arm"></path><path d="M113.2 114.3s3.6 1.6 4.7.6l15-13.7c3-2.4 6-3 8.2-2.7-8-11.2-14-25 3-41 4.7-4.4 10.6-6.4 16.2-6.4.6-1.6 3.6-7.3 11.8-10.7 0 0 4.5 2.7 6.8 16.5 4.3 2.7 8.3 6 12 9.8 3.3 3.5 6.7 8 8.6 12.3 14 3 16.8 8 16.8 8-3.4 8-9.4 11-11.4 11 0 5.8-2.3 11-7.5 15.5-16.4 16-30 9-40 .2 0 3-1 7-5.2 11l-13.3 11c-1 1 .5 5.3.8 5z" fill="currentColor" class="octo-body"></path>
+        </svg>
+        
+        <style> 
+            .github-corner svg {position:absolute;right:0;top:0;mix-blend-mode:darken;color:#ffffff;fill:#000000;}
+            .github-corner:hover .octo-arm {animation:octocat-wave .56s;}
+            @keyframes octocat-wave {
+                0%, 100% {transform:rotate(0);}
+                20%, 60% {transform:rotate(-20deg);}
+                40%, 80% {transform:rotate(10deg);}
+            }
+
+        </style>
+    </a>
+
+    <footer class="footer">
+      <div class="container">
+        <ul class="links">
+          <li>
+              <a href="https://www.npmjs.com/~dormd">
+                <span class="fa fa-list-alt"></span>
+                npm
+              </a>
+          </li>
+          
+          <li>
+              <a href="https://github.com/dormd">
+                <span class="fa fa-github"></span> 
+                GitHub
+              </a>
+          </li>
+        
+          <li>
+              <a href="https://twitter.com/dormoshe">
+                <span class="fa fa-twitter"></span> 
+                Twitter
+              </a>
+          </li>
+
+          <li>
+              <a href="https://il.linkedin.com/in/dormoshe">
+                <span class="fa fa-linkedin-square"></span> 
+                LinkedIn
+              </a>
+          </li>
+        </ul>
+        <p>
+          &copy; 2016 - countries-data-angular4 by dormd (Dor Moshe)
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+    </script>  
+  </body>
+</html>

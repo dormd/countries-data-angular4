@@ -1,0 +1,159 @@
+/* You can add global styles to this file, and also import other style files */
+.jumbotron {
+    padding-top:30px;    
+    padding-bottom:30px;
+    margin-bottom:30px;
+    background-color:#fafafa
+}
+
+.jumbotron, .jumbotron .h1, .jumbotron h1 {
+    color:inherit
+}
+
+.jumbotron p {
+    margin-bottom:15px;
+    font-size:23px;
+    font-weight:200
+}
+
+.jumbotron > hr {
+    border-top-color:#e1e1e1
+}
+
+.container-fluid .jumbotron, .container .jumbotron {
+    border-radius:0;
+    padding-left:12px;
+    padding-right:12px
+}
+
+.jumbotron .container {
+    max-width:100%
+}
+
+@media screen and (min-width:768px) {
+    .jumbotron{ 
+        padding-top:48px;
+        padding-bottom:48px
+    }
+    
+    .container-fluid .jumbotron, .container .jumbotron {
+        padding-left:60px;
+        padding-right:60px
+    }
+    
+    .jumbotron .h1, .jumbotron h1 {
+        font-size:68px
+    }
+}
+
+
+.jumbotron{
+    position:relative;
+    font-size:16px;
+    color:#fff;
+    color:hsla(0,0%,100%,.75);
+    text-align:center;
+    border-radius:0;
+    padding-bottom:80px;
+    background: linear-gradient(90deg,#0035b3,#7bb0ff);
+}
+    
+.jumbotron h1 {
+    margin-bottom:15px;
+    font-weight:300;
+    letter-spacing:-1px;
+    color:#fff
+}
+    
+.jumbotron iframe {
+    width:144px!important;
+    height:30px!important;
+    border:none;overflow:hidden;margin:2px
+}
+    
+.jumbotron .container {
+    padding-bottom:21px
+}
+    
+.jumbotron .jumbotron-links a,.jumbotron p a {
+    font-weight:500;
+    color:#fff
+}
+    
+.jumbotron .jumbotron-links {
+    margin-top:15px;
+    margin-bottom:0;
+    padding-left:0;
+    list-style:none;
+    font-size:14px
+}
+    
+.jumbotron .jumbotron-links li {
+    display:inline
+}
+    
+.jumbotron .jumbotron-links li+li {
+    margin-left:20px
+}
+    
+.jumbotron .bottom {
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    padding:18px;
+    background-color:rgba(0,0,0,.2)
+}
+    
+.btn-outline {
+    margin-top:15px;
+    margin-bottom:15px;
+    padding:18px 24px;
+    font-size:inherit;
+    font-weight:500;
+    color:#fff;
+    background-color:transparent;
+    border-color:#fff;
+    border-color:hsla(0,0%,100%,.5);
+    transition:all .1s ease-in-out
+}
+    
+.btn-outline.btn-main {
+    background-color:hsla(0,0%,100%,.24)
+}
+    
+.btn-outline:active,.btn-outline:hover {
+    color:#0d6632;
+    background-color:#fff;
+    border-color:#fff
+}
+    
+footer {
+    text-align:center;
+    opacity:.8;
+    padding:50px;
+    background: linear-gradient(90deg,#0035b3,#7bb0ff);
+}
+
+footer p {
+    color:#eee
+}
+
+footer a, footer a:hover {
+    color:#fff
+}
+
+.links {
+    margin:0;
+    list-style:none;
+    padding-left:0
+}
+
+.links li {
+    display:inline;
+    padding:0 10px
+}
+
+.social-buttons {
+    height:28px
+}
