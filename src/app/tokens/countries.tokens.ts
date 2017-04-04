@@ -1,10 +1,10 @@
 import { InjectionToken } from '@angular/core';
 import { CountriesData, AnthemsData, LanguagesData,
-         Countries, Anthems, Languages } from 'countries-data';
+         Countries, Languages, Anthems } from 'countries-data';
 
-export const COUNTRIES_DATA = new InjectionToken('CountriesData');
-export const LANGUAGES_DATA = new InjectionToken('LanguagesData');
-export const ANTHEMS_DATA = new InjectionToken('AnthemsData');
+export const COUNTRIES_DATA = new InjectionToken<Countries>('CountriesData');
+export const LANGUAGES_DATA = new InjectionToken<Languages>('LanguagesData');
+export const ANTHEMS_DATA = new InjectionToken<Anthems>('AnthemsData');
 
 export const TOKENS_PROVIDERS = [
     { provide: COUNTRIES_DATA, useValue: CountriesData },
