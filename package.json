@@ -22,6 +22,7 @@
     "@angular/router": "^4.0.0",
     "core-js": "^2.4.1",
     "countries-data": "^1.0.0",
+    "lodash": "^4.17.4",
     "rxjs": "^5.1.0",
     "zone.js": "^0.8.4"
   },
