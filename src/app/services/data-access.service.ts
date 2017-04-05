@@ -10,7 +10,7 @@ export class DataAccessService {
   constructor(@Inject(ANTHEMS_DATA) private _anthemsData: Anthems,
               @Inject(COUNTRIES_DATA) private _countriesData: Countries) { }
 
-  getNativeCountryName(a2: string): string {
+  getCountryNativeName(a2: string): string {
     const values: IOfficialCommon[] = _.values(this.getCountryObjByA2(a2).name.native);
     if (values.length > 0) {
         return values[0].common;
@@ -19,7 +19,7 @@ export class DataAccessService {
     return '';
   }
 
-  getCommonCountryName(a2: string): string {
+  getCountryCommonName(a2: string): string {
     return this.getCountryObjByA2(a2).name.common;
   }
 

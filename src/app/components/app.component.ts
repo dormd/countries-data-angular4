@@ -10,8 +10,8 @@ export class AppComponent implements OnInit {
   countriesA2s: string[];
   selectedA2 = 'IL';
 
-  nativeCountryName: string;
-  commonCountryName: string;
+  countryNativeName: string;
+  countryCommonName: string;
   capital: string;
   continents: string;
   subRegion: string;
@@ -34,8 +34,8 @@ export class AppComponent implements OnInit {
   onA2Changed(a2) {
     this.selectedA2 = a2;
 
-    this.nativeCountryName = this._dataAccessService.getNativeCountryName(this.selectedA2);
-    this.commonCountryName = this._dataAccessService.getCommonCountryName(this.selectedA2);
+    this.countryNativeName = this._dataAccessService.getCountryNativeName(this.selectedA2);
+    this.countryCommonName = this._dataAccessService.getCountryCommonName(this.selectedA2);
     this.capital = this._dataAccessService.getCapital(this.selectedA2);
     this.continents = this._dataAccessService.getContinents(this.selectedA2);
     this.subRegion = this._dataAccessService.getSubRegion(this.selectedA2);
