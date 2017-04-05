@@ -129,6 +129,11 @@
 }
     
 footer {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+        
     text-align:center;
     opacity:.8;
     padding:50px;
