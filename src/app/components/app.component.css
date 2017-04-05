@@ -1,0 +1,11 @@
+:host {
+    display: block;
+    margin: 30px;
+}
+
+#country-a2-select {
+    display: inline-block;
+    width: 150px;
+    height: 30px;
+    margin-left: 7px;
+}

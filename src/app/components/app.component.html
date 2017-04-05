@@ -1,39 +1,65 @@
-<div class='a2-selection'>
-  <label>Countries alpha 2 codes</label>
+<div class='a2-selection form-group'>
+  <label for='country-a2-select'>Country alpha 2 codes</label>
 
-  <select [ngModel]="selectedA2" (ngModelChange)="onA2Changed($event)">
+  <select id='country-a2-select' [ngModel]="selectedA2" (ngModelChange)="onA2Changed($event)" class="form-control">
     <option [value]='a2' *ngFor="let a2 of countriesA2s">{{ a2 }}</option>
   </select>
 </div>
 
 <hr>
 
-<div class='country-details'>
+<div class='country-details'>  
+  <div>
+    <label>Common country name:</label> {{ commonCountryName }}
+  </div>
+
+  <div>
+    <label>Native country name:</label> {{ nativeCountryName }}
+  </div>
+
+  <div>
+    <label>Continent(s):</label> {{ continents }}
+  </div>
+
   <div>
     <label>Capital city:</label> {{ capital }}
   </div>  
 
   <div>
-    <label>Continent:</label> {{ continent }}
+    <label>Sub region:</label> {{ subRegion }}
+  </div>
+
+  <div>
+    <label>Language(s):</label> {{ languages }}
   </div>  
 
   <div>
-    <label>Region:</label> {{ region }}
-  </div>  
-
-  <div>
-    <label>Dialling National Prefix:</label> {{ diallingNationalPrefix }}
-  </div>  
-
-  <div>
-    <label>Area:</label> {{ area | number }} km * km
-  </div>  
+    <label>Area:</label> {{ area | number }} 
+    km<sup><small>2</small></sup>
+  </div>
 
   <div>
     <label>Population Count:</label> {{ populationCount | number }}
-  </div>  
+  </div>
 
   <div>
-    <label>Population Precentage (from world):</label> {{ populationPrecentage }}%
+    <label>World population Precentage:</label> {{ populationPrecentage }}%
+  </div>
+
+  <div *ngIf='callingCode && callingCode !== ""'>
+    <label>Calling code:</label> {{ callingCode }}
+  </div>
+
+  <div *ngIf='anthemLink'>
+    <label>Anthem link:</label> 
+    <a href='{{ anthemLink }}'>Click here</a>
+  </div>
+
+  <div *ngIf='wikiLinkSuffix'>
+    <label>Wikipedia: </label>
+
+    <a href='https://en.wikipedia.org{{ wikiLinkSuffix }}'>
+      <i class="fa fa-wikipedia-w" aria-hidden="true"></i>
+    </a>
   </div>  
 </div>
