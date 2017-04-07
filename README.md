@@ -5,7 +5,7 @@ The project was generated with [angular-cli](https://github.com/angular/angular-
 The project use the dataset from [countries-data](https://github.com/dormd/countries-data).
 
 ## Demo app
-You can see how fun to use this npm in our [Demo Application](https://dormd.github.io/countries-data-angular4). 
+You can see how fun it is to use this npm in the [Demo Application](https://dormd.github.io/countries-data-angular4). 
 
 ![the app](https://cdn-images-1.medium.com/max/1000/1*RJ-r_WLNC7KWLTCllbPaew.png)
 
